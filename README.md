@@ -14,7 +14,6 @@
 6. [Instalasi LAMP Stack](#-5-instalasi-lamp-stack)
 7. [Instalasi WordPress](#-6-instalasi-wordpress)
 8. [Troubleshooting: Muncul Halaman Default Apache, Bukan WordPress](#-7-troubleshooting-yang-muncul-halaman-default-apache-bukan-wordpress)
-9. [Penutup](#-penutup)
 
 ---
 
@@ -250,14 +249,6 @@ Kadang server sudah benar, tapi browser masih menyimpan cache halaman default la
 | `DirectoryIndex` sudah prioritaskan PHP? | `cat /etc/apache2/mods-enabled/dir.conf` |
 | Modul PHP aktif? | `apache2ctl -M \| grep php` |
 | Apache sudah di-restart? | `sudo systemctl status apache2` |
-
----
-
-## 🎉 Penutup
-
-Kalau semua langkah di atas sudah diikuti, seharusnya situs WordPress kamu sudah bisa diakses lewat **Public IP** instance EC2 dan siap dikustomisasi lebih lanjut — mulai dari ganti tema, pasang plugin, sampai (opsional) arahkan domain dan pasang SSL pakai **Let's Encrypt**. Selamat mencoba dan selamat nge-blog! 🥳🌐
-
----
 
 <p align="center">
   Dibuat dengan ❤️ untuk belajar deployment WordPress di AWS EC2
